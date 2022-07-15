@@ -1,0 +1,13 @@
+<h1>Web Server NodeJS</h1>
+<h2>Halo <%= nama %></h2>
+
+<h3>Daftar Keluarga</h3>
+
+<% if (keluarga.length < 1) { %>
+<p>Data Keluarga Kosong</p>
+<% } else { %> <% keluarga.forEach(klrg => { %>
+<ul>
+    <li>Nama : <%= klrg.nama %></li>
+    <li>Email : <%= klrg.email %></li>
+</ul>
+<% }) %> <% } %>
